@@ -7,46 +7,46 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./script.js"></script>
-
-   <nav>
-        <div class="nav-center">
-            <!-- nav header -->
-            <div class="nav-header"></div>
-            <img src="./Images/Imaginary Solutions Logo.png" class="logo" alt="logo">
-            <button class="nav-toggle">
-                <img src="" class="hamburger-menu">
-            </button>
-        </div>
-        <!-- links -->
     
-    <div class="topnav" id="topnav"
-        <a href="#home">Home</a>
-        <a href="#calculator">Calculator</a>
-        <a href="#contact">Contact</a>
-     
-    </div>   
-        <a href="javascript:void(0);"
-        class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-    
-      </div>
+   <nav id="main-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Calculator</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <input type="checkbox" id="hamburger-input" class="burger-shower" />
+  <label id="hamburger-menu" for="hamburger-input">
+    <nav id="sidebar-menu">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Calculator</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
-
+  </label>
+  
+  <div class="overlay"></div>
+  
+  
  <div class="grid-container">
     
     <p>Imaginary Solutions Inc. is a pioneering service company that specializes in the development
         of fictional solutions for everyday problems. Our company focuses on providing innovative,
         yet entirely fictional services to meet the needs of a diverse clientele.</p>
 
-    <img src="./Images/rubiks-cube-2583645_1280.png" alt="rubiks cube" width="400px">
+    <img src="./Images/rubiks-cube-2583645_1280.png" class="Image_1 " alt="rubiks cube" width="400px">
 
     <p>One thing we made to provide you with solutions to your problems, 
         is a handy calculation tool for 3 different conversions, temperature, distance, and measurements.</p>
 
     <img src="./Images/Arrow.png" alt="arrow" height="150px">
  
+    
  </div>
+ <script src="./script.js"></script>
+
 </body>
 </html>
