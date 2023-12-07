@@ -2,12 +2,16 @@
 
 
 body {
-    display: grid;
     padding: 0px;
     margin: 0px;
     font-size: 20px;
     min-height: 200vh;
     font-family: 'Cabin', Sans-serif;
+    }
+
+.grid-container{
+    display: grid;
+    padding: 60px 0px 30px 30px;
     }
 
 .logo {
@@ -67,7 +71,7 @@ font-size: 2rem;
 }
 
 #main-menu a {
-color: #B9FAF8;
+color: white;
 font-size: 1.5rem;
 text-decoration: none;
 }
@@ -115,7 +119,7 @@ box-sizing: border-box;
 }
 
 #hamburger-menu h3 {
-color: #B9FAF8;
+color: white;
 font-size: 2.2rem;
 }
 
@@ -129,7 +133,7 @@ line-height: 3rem;
 }
 
 #hamburger-menu a {
-color: #B9FAF8;
+color: white;
 font-size: 1.3rem;
 text-decoration: none;
 }
@@ -156,4 +160,17 @@ display: none;
 display: inline;
 }
 }
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
 
