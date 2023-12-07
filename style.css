@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.grid-container {
+    max-width: 800px;
+   
+}
+
+ul {
+    display: block;
+    list-style: none;
+    width: auto;
+}
+
+.links {
+    flex-direction: row;
+}
