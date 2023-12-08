@@ -11,15 +11,18 @@ body {
 
 /*main grid container for text, images and button*/
 .grid-container{
+    display: grid;
     justify-content: center;
+    align-self: center;
     display: grid;
     padding: 60px 40px 30px 40px;
-    max-width: 800px;
+    max-width: 1000px;
+    margin: auto;
     }
 
 /*company logo*/
 .logo {
- display: block;
+ display: flex;
  justify-content: center;
  align-items: center;
  width: 200px;
