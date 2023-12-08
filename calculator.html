@@ -6,6 +6,47 @@
     <title>Calculator</title>
 </head>
 <body>
-    
+    <div id =fahrenheit-celsius>
+        <input id=fahrenheit placeholder="Fahrenheit" />
+        <button onclick="convert()">Convert</button>
+        <span id="celsius"></span>
+    </div>
+
+<div id =inches-centimeters>
+    <input id=inches placeholder="Inches" />
+    <button onclick="convert()">Convert</button>
+    <span id="centimeters"></span>
+</div>
+
+    <script>
+        function convert () {
+            // 1. get the value from the input
+            const fahrenheit = parseInt(
+                document.getElementById("fahrenheit").value
+                );
+           
+            // 2. convert to celcius
+            const celsius =  (fahrenheit - 32) * 0.5556;
+           
+
+            // 3. display number
+            document.getElementById("celsius").innerText = celsius;
+        }
+
+        function convert () {
+            // 1. get the value from the input
+            const inches = parseInt(
+                document.getElementById("centimeters").value
+                );
+           
+            // 2. convert to centimeters
+            const centimeters = (inches * 2.54);
+            console.log(centimeters);
+            
+
+            // 3. display number
+            document.getElementById("centimeters").innerText = centimeters;
+        }
+    </script>
 </body>
 </html>
