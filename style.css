@@ -2,7 +2,7 @@
 
 
 body {
-    padding: 0px;
+   
     margin: 0px;
     font-size: 20px;
     min-height: 200vh;
@@ -10,8 +10,9 @@ body {
     }
 
 .grid-container{
+    justify-content: center;
     display: grid;
-    padding: 60px 0px 30px 30px;
+    padding: 60px 40px 30px 40px;
     }
 
 .logo {
@@ -22,6 +23,8 @@ body {
 .Image_1 {
     border-radius: 20px;
     justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .grid-container {
@@ -161,16 +164,22 @@ display: inline;
 }
 }
 
-a:link, a:visited {
-    background-color: #f44336;
+
+  
+  a:hover {
+    background-color: rgb(99, 99, 99);
+  }
+
+.button {
+    background-color: #234876; 
+    text-align: center;
+    border-radius: 20px;
+    width: 80px;
+    border: none;
     color: white;
-    padding: 14px 25px;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: red;
-  }
-
+    font-size: 16px;
+}
