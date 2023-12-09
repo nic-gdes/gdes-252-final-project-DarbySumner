@@ -20,16 +20,6 @@ body {
 
     }
 
-/*styling for images*/
-    .Image_1 {
-
-      display: flex;
-      border-radius: 20px;
-      justify-content: center;
-      width: 90%;
-      height: auto;
-  }
-
 /*company logo*/
 .logo {
 
