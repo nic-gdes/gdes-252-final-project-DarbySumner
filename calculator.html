@@ -18,6 +18,12 @@
     <span id="centimeters"></span>
 </div>
 
+<div id =feet-miles>
+    <input id=feet placeholder="Feet" />
+    <button onclick="convert()">Convert</button>
+    <span id="miles"></span>
+</div>
+
     <script>
         function convert () {
             // 1. get the value from the input
@@ -36,17 +42,33 @@
         function convert () {
             // 1. get the value from the input
             const inches = parseInt(
-                document.getElementById("centimeters").value
+                document.getElementById("inches").value
                 );
            
             // 2. convert to centimeters
-            const centimeters = (inches * 2.54);
-            console.log(centimeters);
+            const centimeters = (inches) / 0.39370;
+       
             
 
             // 3. display number
             document.getElementById("centimeters").innerText = centimeters;
         }
+
+        function convert () {
+            // 1. get the value from the input
+            const feet = parseInt(
+                document.getElementById("feet").value
+                );
+           
+            // 2. convert to meters
+            const miles = (feet) * 0.00018939;
+             console.log(miles);
+            
+
+            // 3. display number
+            document.getElementById("miles").innerText = miles;
+        }
+
     </script>
 </body>
 </html>
