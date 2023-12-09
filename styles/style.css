@@ -31,6 +31,7 @@ body {
 
 /*rubix cube image*/
 .Image_1 {
+    display: flex;
     border-radius: 20px;
     justify-content: center;
     width: 100%;

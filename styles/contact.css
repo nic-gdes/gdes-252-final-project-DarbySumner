@@ -2,8 +2,6 @@
 
 
 body {
-   
-    margin: 0px;
     font-size: 20px;
     min-height: 200vh;
     font-family: 'Cabin', Sans-serif;
@@ -11,27 +9,42 @@ body {
 
 /*main grid container for text, images and button*/
 .grid-container{
+
     display: grid;
     justify-content: center;
     align-self: center;
     display: grid;
-    padding: 60px 40px 30px 40px;
+    padding: 40px;
     max-width: 1000px;
     margin: auto;
+
     }
+
+/*styling for images*/
+    .Image_1 {
+
+      display: flex;
+      border-radius: 20px;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+  }
 
 /*company logo*/
 .logo {
- display: flex;
- justify-content: center;
- align-items: center;
- width: 200px;
- height: auto;
- padding: 50px 50px 50px 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: auto;
+  padding: 50px 50px 50px 100px;
+
 }
 
 /*main menu nav bar*/
-.overlay{
+.overlay {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +56,7 @@ body {
   overflow: hidden;
   background: black;
   z-index: -1;
+
 }
 
 #main-menu {
@@ -161,23 +175,4 @@ body {
 #hamburger-menu {
   display: inline;
   }
-}
-
-/*calculator button*/ 
-  a:hover {
-    background-color: rgb(99, 99, 99);
-  }
-
-.button {
-    background-color: #234876; 
-    text-align: center;
-    border-radius: 20px;
-    width: 80px;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }
