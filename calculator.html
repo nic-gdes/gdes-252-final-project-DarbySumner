@@ -4,25 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/calculator.css">
 </head>
 <body>
-    <div id =fahrenheit-celsius>
-        <input id=fahrenheit placeholder="Fahrenheit" />
-        <button onclick="convert()">Convert</button>
-        <span id="celsius"></span>
-    </div>
 
-<div id =inches-centimeters>
+    <img src="./Images/Imaginary Solutions Logo.png" alt="Imaginary Solutions Logo" class="logo">
+ 
+    <nav id="main-menu">
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="calculator.html">Calculator</a></li>
+       <li><a href="contact.html">Contact</a></li>
+     </ul>
+   </nav>
+     
+ <input type="checkbox" id="hamburger-input" class="burger-shower" />
+ <label id="hamburger-menu" for="hamburger-input">
+   <nav id="sidebar-menu">
+     <h3>Menu</h3>
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="calculator.html">Calculator</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </div>
+    </nav>
+   </div>
+   </label>
+   
+   <div class="overlay"></div>
+ </div>
+  
+   
+
+ <div class="conversion-1">
+
+    <input id=fahrenheit placeholder="Fahrenheit" />
+    <button onclick="convert()">Convert</button>
+    <span id="celsius"></span>
+
+</div>
+
+<div class="conversion-2">
+
     <input id=inches placeholder="Inches" />
     <button onclick="convert()">Convert</button>
     <span id="centimeters"></span>
+
 </div>
 
-<div id =feet-miles>
+<div class="conversion-3">
+    
     <input id=feet placeholder="Feet" />
     <button onclick="convert()">Convert</button>
     <span id="miles"></span>
+
 </div>
+
 
     <script>
         function convert () {
@@ -48,7 +86,7 @@
            
             // 2. convert to centimeters
             const centimeters = (inches) / 0.39370;
-       
+      
             
 
             // 3. display number
@@ -65,7 +103,7 @@
             // 2. convert to meters
             const miles = (feet) * 0.00018939;
              
-            
+            console.log(miles);
 
             // 3. display number
             document.getElementById("miles").innerText = miles;
