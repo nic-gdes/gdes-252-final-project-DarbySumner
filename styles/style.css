@@ -14,7 +14,6 @@ body {
     display: grid;
     justify-content: center;
     align-self: center;
-    display: grid;
     padding: 60px 40px 30px 40px;
     max-width: 1000px;
     margin: auto;
@@ -22,7 +21,7 @@ body {
 
 /*company logo*/
 .logo {
- display: flex;
+ display: block;
  justify-content: center;
  align-items: center;
  width: 200px;
@@ -52,6 +51,7 @@ body {
   background: black;
   z-index: -1;
 }
+
 
 #main-menu {
   display: block;
@@ -86,7 +86,7 @@ body {
 }
 
 #main-menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*hamburger menu and transition animation*/
@@ -149,7 +149,8 @@ body {
 }
 
 #hamburger-menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+
 }
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
@@ -173,7 +174,7 @@ body {
 
 /*calculator button*/ 
   a:hover {
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(166, 166, 166);
   }
 
 .button {
