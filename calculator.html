@@ -28,40 +28,41 @@
            <li><a href="calculator.html">Calculator</a></li>
            <li><a href="contact.html">Contact</a></li>
          </ul>
-       </div>
       </nav>
-     </div>
      </label>
- 
-  <div class="overlay"></div>
+
 </div>
+
+<div class="container-2">
  
+    <p>Time to Calculate!</p>
+    <p>Just type whatever number you'd like to convert and click the corresponding conversion button.</p>
+    
+<div class="calculations">
+
+  <input type="number" id="numberInput" placeholder="Fahrenheit, Feet, or Miles...">
+  <span class="solution" id="solution"></span>
   
-   
-
- <div class="conversion-1">
+</div>
     
-  <input id=fahrenheit placeholder="Fahrenheit" />
-    <button onclick="convert('fahrenheit')">Celsius</button>
-    <span id="celsius"></span>
 
+  <div class="calculation-buttons">
+
+      <div class="button1">
+        <a  onclick="convertFahrenheit ()">F to C</a>
+      </div>
+
+      <div class="button2">
+        <a onclick="convertInches ()">Inches to Feet</a>
+      </div>
+
+      <div class="button3">
+        <a onclick="convertFeet ()">Feet to Miles</a>
+      </div>
+  
+  </div>
 </div>
 
-<div class="conversion-2">
-
-    <input id=inches  placeholder="Inches" />
-    <button onclick="convert('inches')">Centimeters</button>
-    <span id="centimeters"></span>
-
-</div>
-
-<div class="conversion-3">
-    
-    <input id=feet placeholder="Feet" />
-    <button onclick="convert('feet')">Miles</button>
-    <span id="miles"></span>
-
-</div>
 
 
 

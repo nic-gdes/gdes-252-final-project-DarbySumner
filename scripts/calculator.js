@@ -1,4 +1,4 @@
-function convert () {
+function convertFahrenheit () {
     // 1. get the value from the input
     const fahrenheit = parseInt(
         document.getElementById("fahrenheit").value
@@ -6,6 +6,7 @@ function convert () {
    
     // 2. convert to celcius
     const celsius =  (fahrenheit - 32) * 0.5556;
+    console.log(celsius)
    
 
     // 3. display number
@@ -13,7 +14,7 @@ function convert () {
 }
 
 
-function convert () {
+function convertInches () {
     // 1. get the value from the input
     const inches = parseInt(
         document.getElementById("inches").value
@@ -30,7 +31,7 @@ function convert () {
 }
 
 
-function convert () {
+function convertFeet () {
     // 1. get the value from the input
     const feet = parseInt(
         document.getElementById("feet").value
