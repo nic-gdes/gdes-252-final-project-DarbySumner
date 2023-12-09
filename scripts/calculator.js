@@ -21,6 +21,7 @@ function convert () {
    
     // 2. convert to centimeters
     const centimeters = inches / 0.39370;
+    console.log(centimeters);
 
     
 

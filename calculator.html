@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/calculator.css">
-    <title>Calculator</title>
+    <title>Convert Calculator</title>
 
 </head>
 <body>
-
+<div class="container">
     <img src="./Images/Imaginary Solutions Logo.png" alt="Imaginary Solutions Logo" class="logo">
  
     <nav id="main-menu">
@@ -33,33 +33,32 @@
      </div>
      </label>
  
-  
-   
-   <div class="overlay"></div>
+  <div class="overlay"></div>
+</div>
  
   
    
 
  <div class="conversion-1">
-
-    <input id=fahrenheit type="number" placeholder="Fahrenheit" />
-    <button onclick="convert()">Convert</button>
+    
+  <input id=fahrenheit placeholder="Fahrenheit" />
+    <button onclick="convert('fahrenheit')">Celsius</button>
     <span id="celsius"></span>
 
 </div>
 
 <div class="conversion-2">
 
-    <input id=inches type="number" placeholder="Inches" />
-    <button onclick="convert()">Convert</button>
+    <input id=inches  placeholder="Inches" />
+    <button onclick="convert('inches')">Centimeters</button>
     <span id="centimeters"></span>
 
 </div>
 
 <div class="conversion-3">
     
-    <input id=feet type="number" placeholder="Feet" />
-    <button onclick="convert()">Convert</button>
+    <input id=feet placeholder="Feet" />
+    <button onclick="convert('feet')">Miles</button>
     <span id="miles"></span>
 
 </div>
