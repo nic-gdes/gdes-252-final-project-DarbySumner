@@ -1,7 +1,7 @@
 function convertFahrenheit () {
     // 1. get the value from the input
     const fahrenheit = parseInt(
-        document.getElementById("fahrenheit").value
+        document.getElementById("numberInput").value
         );
    
     // 2. convert to celcius
@@ -10,14 +10,14 @@ function convertFahrenheit () {
    
 
     // 3. display number
-    document.getElementById("celsius").innerText = celsius;
+    document.getElementById("solution").innerText = celsius;
 }
 
 
 function convertInches () {
     // 1. get the value from the input
     const inches = parseInt(
-        document.getElementById("inches").value
+        document.getElementById("numberInput").value
         );
    
     // 2. convert to centimeters
@@ -27,14 +27,14 @@ function convertInches () {
     
 
     // 3. display number
-    document.getElementById("centimeters").innerText = centimeters;
+    document.getElementById("solution").innerText = centimeters;
 }
 
 
 function convertFeet () {
     // 1. get the value from the input
     const feet = parseInt(
-        document.getElementById("feet").value
+        document.getElementById("numberInput").value
         );
    
     // 2. convert to meters
@@ -43,5 +43,5 @@ function convertFeet () {
     console.log(miles);
 
     // 3. display number
-    document.getElementById("miles").innerText = miles;
+    document.getElementById("solution").innerText = miles;
 }
